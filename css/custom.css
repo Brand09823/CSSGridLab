@@ -49,9 +49,10 @@ main{
 }
 .grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns:repeat(5, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+   
 }
 .l, .o, .v, .e, .r{
     color: white;
@@ -61,22 +62,27 @@ main{
     line-height: 10rem;
 }
 .l{
-    background-color: var(--Brand-green);
-    grid-row: 5;
+    background-color: var(--Brand-orange2);
+    order: 1;
+   
 }
 .o{
-    background-color: var(--Brand-green);
-    grid-row: 4;
+    background-color: var(--Brand-orange2);
+    order: 2;
+   
 }
 .v{
-    background-color: var(--Brand-green);
-    grid-row: 3;
+    background-color: var(--Brand-orange2);
+    order: 3;
+    
 }
 .e{
-    background-color: var(--Brand-green);
-    grid-row: 2;
+    background-color: var(--Brand-orange2);
+    order: 4;
+   
 }
 .r{
-    background-color: var(--Brand-green);
-    grid-row: 1;
+    background-color: var(--Brand-orange2);
+    order: 5;
+    
 }
